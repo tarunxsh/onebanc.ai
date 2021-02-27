@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'onebancfont';
+  src:  url("static/onebanc_fonts.woff") format('woff');
+  font-weight: bold;
+}
+
+
+body {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font: 10px "Roboto","Cambria","lucida grande","lucida sans",Geneva,"sans-serif",tahoma,helvetica,arial;
+	line-height: 20px;
+	min-height: 100vh;
+}
+
+.main {
+	height: 100vh;
+	display: flex;
+}
+
+
+.container {
+	height: 100%;
+}
+
+.left {
+	background:linear-gradient(
+			180deg,
+			rgba(3,135,209,1) 0%,rgba(1,85,132,1) 100%
+
+		); 
+	height: 100%;
+	width:45%;
+	color:#fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.right{
+	padding: 0 10%;
+	padding-top: 5%;
+	width:55%;
+	display: flex; 
+	align-items: center;
+}
+
+.data {
+	padding: 0 10px;
+	/*border:1px solid #000;*/
+	width: 70%;
+}
+
+#logo {
+	max-width: 330px;
+}
+
+#title {
+	margin:0;
+	font-size: 4.5em;
+	line-height: 1em;
+}
+
+#para{
+	font-size: 1.8em;
+    line-height: 1.4em;
+    
+}
+
+.card { 
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #004da3;
+}
+
+.mail {
+	display: flex; 
+	border:1px solid #000;
+	/*background-color: #fff;*/
+	height: 30px;
+}	
+
+.mail-input {
+	width: 80%;
+	background-color: #fff;
+}
+
+input {
+	border:0;
+	height: 90%;
+	width: 100%;
+}
+input:focus {
+	 outline: none;
+}
+
+.btn {
+	width:20%;
+	background-color: #00d1eb;
+	font-size: 25px;
+	color:#fff;
+}
+
+
+
+.guy1 {
+	position: relative;
+	height: 70%;
+	/*border:1px solid #000;*/
+	
+}
+
+.guy2 {
+	height: 70%;
+	position: relative;
+	/*border:1px solid #000;*/
+}
+
+#g1 {
+	height: 80%;
+}
+
+#g2 {
+	height: 80%;
+}
+
+/*onebanc icon font size*/
+i {
+	font-size: 3rem;
+}
+
+.box{
+	font-family: "onebancfont";
+	position: absolute;
+}
+
+#l1 {
+	position: absolute;
+	top:-50px;
+	right:45px;
+	transform: rotateY(180deg);
+}
+#l2 {
+	position: absolute;
+	top:-45px;
+	right:-95px;
+}
+
+.b1{
+	left:1%;
+	top:-10%;
+}
+
+.b2{
+	top:10%;
+	left:-46%;
+}
+.b3{
+	top:-5%;
+	left:-38%;
+}
+.b4{
+	top:25%;
+	left:-43%;
+}
+.b5{
+	top:40%;
+	left:-18%;
+}
+.b6{
+	top:-10%;
+	left:35%;
+}
+.b7{
+	top:-10%;
+	right:-10%;
+}
+.b8{
+	top:8%;
+	right:-21%;
+}
+.b9{
+	bottom:63%;
+	right:-22%;
+}
+
+.b10{
+	top:60px;
+	right:5px;
+}
+.b11{
+	top:15px;
+	right:30px;
+}
+.b12{
+	top:15px;
+	right:-25px;
+}
+.b13{
+	top:-25px;
+	right:-2px;
+}
+.b14{
+	top:-35px;
+	right:50px;
+}
+.b15{
+	top:-30px;
+	right:-50px;
+}
+.b16{
+	top:-70px;
+	right:-40px;
+}
+
+.b17{
+	top:-70px;
+	right:20px;
+}
+.b18{
+	top:-70px;
+	right:90px;
+}
+
+
+/*guy caption*/
+.tag {
+	font-size: 1.2rem;
+}
+
+.selected {
+
+	color:blue;
+	text-shadow:2px 2px 5px #ff0000;
+}
+
+
+/*RESPONSIVE*/
+@-ms-viewport{
+  width: device-width;
+}
+@media only screen and (max-width: 786px){
+	.main{
+		flex-direction: column;
+		height: 100%;
+
+	}
+	.left{
+		width:100%;
+		justify-content: center;
+		padding: 0;
+	}
+	.data {
+		width:100%;
+		text-align: center;
+	}
+
+	.right{
+		flex-direction: column;
+	}
+	.guy1{
+		margin: 25%;
+		height: 20%;
+		text-align: center;
+		margin-bottom: 40%;
+	}
+	.guy1 i {
+		font-size: 30px;
+	}
+	.b6 {
+		top:-15%;
+	}
+	#g1{
+		width: 40%;
+	}
+	hr {
+		display: none;
+	}
+
+}
