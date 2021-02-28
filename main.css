@@ -7,7 +7,6 @@
 
 
 body {
-	border:1px solid blue;
 	margin: 0;
 	padding:0;
 	box-sizing: border-box;
@@ -60,7 +59,7 @@ body {
 	line-height: 1em;
 }
 
-#para{
+.para{
 	font-size: 1.8em;
     line-height: 1.4em;
     
@@ -73,33 +72,38 @@ body {
 	background-color: #004da3;
 }
 
-.mail {
+#mail {
 	display: flex; 
-	border:1px solid #000;
 	height: 30px;
+	border:2px solid #00d1eb;
+	align-items: stretch;
 }	
 
-.mail-input {
+
+
+#email{
 	width: 80%;
-	background-color: #fff;
 }
 
-input {
+#emailsubmit{
+	color:#fff;
+	background-color: #00d1eb;
 	border:0;
-	height: 90%;
-	width: 100%;
+	font-size: 25px;
+	width: 20%;
 }
+
 input:focus {
 	 outline: none;
 }
 
-.btn {
-	width:20%;
-	background-color: #00d1eb;
-	font-size: 25px;
-	color:#fff;
-}
 
+#msg {
+	display: none;
+	margin: 0;
+	padding: 0;
+	text-shadow:2px 2px 5px #ff0000;
+}
 
 
 .guy1 {

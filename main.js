@@ -6,7 +6,6 @@ var txt =['CARDS', 'PAYMENTS', 'LOAN', 'SUPPORT', 'REWARDS', 'SAVINGS', 'INVESTM
 function typeWriter() {
 	if(i==txt[j].length){
 		i=0;
-		console.log(j)
 		j=(j+1)%2;
 		document.getElementById("typing").innerHTML="";
 	}
@@ -24,7 +23,6 @@ function typeWriter() {
 var x=0;
 var y=0;
 function anime() {
-	console.log("adding")
 	document.querySelectorAll(".s"+x).forEach((item)=>item.classList.add("selected"))
 	setTimeout(animeremove, 2000);
 	x=((x+1)%9)+1;
@@ -33,11 +31,16 @@ function anime() {
 
 
 function animeremove(){
-	console.log("remove")
 	document.querySelectorAll(".s"+y).forEach((item)=>item.classList.remove("selected"))
 	y = ((y+1)%9)+1;
 }
 
+
+
+function submitmail() {
+  document.getElementById("mail").style.display = "none";
+  document.getElementById("msg").style.display = "block";
+}
 
 
 typeWriter()

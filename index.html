@@ -16,20 +16,17 @@
 			<p id="title">
 				RE:<br>THINK<br><span id="typing"></span>
 			</p>
-			<p id="para">
+			<p class="para">
 				We are a Neo Bank and are here to re-imagine and re-invent Banking. We are cool and simply awesome!
 			</p>
 
 			<div class="card">
-				<p id="para">Get an early invitation for our Beta release.</p>
-				<div class="mail">
-					<div class="mail-input">
-						<input type="email" name="email" placeholder="Enter your email">
-					</div>
-					<div class="btn">
-						 <center>&rarr;</center>
-					</div>
-				</div>
+				<p class="para">Get an early invitation for our Beta release.</p>
+				<form id="mail" action="#" onsubmit="submitmail()">
+						<input id="email" type="email" name="email" placeholder="Enter your email">
+						<input id="emailsubmit" type="submit" value="&#x2794;">
+				</form>
+				<p class="para" id="msg">Thank you</p>
 			</div>
 
 			<img id="logo" src="static/qr.png">
