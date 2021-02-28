@@ -50,7 +50,7 @@ body {
 }
 
 #logo {
-	max-width: 330px;
+	max-width: 100%;
 }
 
 #title {
@@ -236,10 +236,13 @@ i {
 }
 
 .curve {
+	position: relative;
 	width:20%;
 }
 
 .curve img{
+	position: absolute;
+	right: 0px;
 	background:linear-gradient(
 			180deg,
 			rgba(3,135,209,1) 0%,rgba(1,85,132,1) 100%

@@ -44,5 +44,5 @@ function submitmail() {
 }
 
 
-// typeWriter()
-// anime()
+typeWriter()
+anime()
