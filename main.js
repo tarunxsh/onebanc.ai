@@ -6,7 +6,7 @@ var txt =['CARDS', 'PAYMENTS', 'LOAN', 'SUPPORT', 'REWARDS', 'SAVINGS', 'INVESTM
 function typeWriter() {
 	if(i==txt[j].length){
 		i=0;
-		j=(j+1)%2;
+		j=(j+1)%9;
 		document.getElementById("typing").innerHTML="";
 	}
 
