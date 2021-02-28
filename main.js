@@ -40,8 +40,9 @@ function animeremove(){
 function submitmail() {
   document.getElementById("mail").style.display = "none";
   document.getElementById("msg").style.display = "block";
+
 }
 
 
-typeWriter()
-anime()
+// typeWriter()
+// anime()
